@@ -11,7 +11,8 @@ namespace FinGuardAI.DataAccess.Entities
         public int Id { get; set; }
         public string RequestName { get; set; }
         public decimal Amount { get; set; }
-        public enum Categories {
+        public enum Categories
+        {
 
             Travel,          // السفر
             Accommodation,   // الإقامة
@@ -30,6 +31,7 @@ namespace FinGuardAI.DataAccess.Entities
         public string State { get; set; }
 
         public virtual User Creator { get; set; }
-        public virtual ICollection<FinancialResponse> Responses { get; set; }
+        public virtual FinancialResponse? Response { get; set; }
+        //public virtual ICollection<FinancialResponse> Responses { get; set; }
     }
 }

@@ -17,7 +17,7 @@ namespace FinGuardAI.DataAccess.Entities
         public DateTime CreatedAt { get; set; }
         public int CreatedBy { get; set; }
 
-        public virtual FinancialRequest Request { get; set; }
+        public virtual FinancialRequest ?Request { get; set; }
         public virtual User Creator { get; set; }
     }
 }

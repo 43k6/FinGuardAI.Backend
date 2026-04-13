@@ -132,9 +132,6 @@ namespace FinGuardAI.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("FinancialRequestId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Justification")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -145,8 +142,6 @@ namespace FinGuardAI.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CreatedBy");
-
-                    b.HasIndex("FinancialRequestId");
 
                     b.HasIndex("RequestId")
                         .IsUnique();
@@ -213,9 +208,6 @@ namespace FinGuardAI.DataAccess.Migrations
                     b.Property<int>("PersonId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PersonId1")
-                        .HasColumnType("int");
-
                     b.Property<string>("Role")
                         .IsRequired()
                         .HasMaxLength(20)
@@ -231,8 +223,6 @@ namespace FinGuardAI.DataAccess.Migrations
 
                     b.HasIndex("PersonId")
                         .IsUnique();
-
-                    b.HasIndex("PersonId1");
 
                     b.ToTable("Users", (string)null);
                 });
@@ -267,12 +257,8 @@ namespace FinGuardAI.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("FinGuardAI.DataAccess.Entities.FinancialRequest", null)
-                        .WithMany("Responses")
-                        .HasForeignKey("FinancialRequestId");
-
                     b.HasOne("FinGuardAI.DataAccess.Entities.FinancialRequest", "Request")
-                        .WithOne()
+                        .WithOne("Response")
                         .HasForeignKey("FinGuardAI.DataAccess.Entities.FinancialResponse", "RequestId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -285,26 +271,20 @@ namespace FinGuardAI.DataAccess.Migrations
             modelBuilder.Entity("FinGuardAI.DataAccess.Entities.User", b =>
                 {
                     b.HasOne("FinGuardAI.DataAccess.Entities.Person", "Person")
-                        .WithOne()
-                        .HasForeignKey("FinGuardAI.DataAccess.Entities.User", "PersonId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("FinGuardAI.DataAccess.Entities.Person", null)
-                        .WithMany("Users")
-                        .HasForeignKey("PersonId1");
+                        .WithOne("User")
+                        .HasForeignKey("FinGuardAI.DataAccess.Entities.User", "PersonId");
 
                     b.Navigation("Person");
                 });
 
             modelBuilder.Entity("FinGuardAI.DataAccess.Entities.FinancialRequest", b =>
                 {
-                    b.Navigation("Responses");
+                    b.Navigation("Response");
                 });
 
             modelBuilder.Entity("FinGuardAI.DataAccess.Entities.Person", b =>
                 {
-                    b.Navigation("Users");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("FinGuardAI.DataAccess.Entities.User", b =>

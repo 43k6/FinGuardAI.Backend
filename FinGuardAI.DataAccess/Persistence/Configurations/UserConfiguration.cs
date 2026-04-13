@@ -14,15 +14,16 @@ namespace FinGuardAI.DataAccess.Persistence.Configurations
             builder.Property(u => u.UserName).IsUnicode().IsRequired().HasMaxLength(50);
             builder.Property(u => u.Password).IsRequired();
             builder.Property(u => u.Role).IsRequired().HasMaxLength(20);
+            builder.Property(u => u.PersonId).IsRequired();
 
             // تطبيق Now Date by default
             builder.Property(u => u.CreatedAt).HasDefaultValueSql("GETDATE()");
 
-            // العلاقات
-            builder.HasOne(u => u.Person)
-                   .WithOne()
-                   .HasForeignKey<User>(u => u.PersonId)
-                   .OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(x => x.Person)
+           .WithOne(x => x.User)
+           .HasForeignKey<User>(x => x.PersonId)
+           .IsRequired(false);
+                  
         }
     }
 }
