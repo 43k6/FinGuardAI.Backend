@@ -22,8 +22,9 @@ namespace FinGuardAI.DataAccess.Persistence.Configurations
             builder.HasOne(x => x.Person)
            .WithOne(x => x.User)
            .HasForeignKey<User>(x => x.PersonId)
-           .IsRequired(false);
-                  
+           .IsRequired()
+            .OnDelete(DeleteBehavior.Restrict);
+
         }
     }
 }
