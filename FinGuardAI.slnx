@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="FinGuardAI.API/FinGuardAI.API.csproj" />
+  <Project Path="FinGuardAI.Business/FinGuardAI.Business.csproj" />
+  <Project Path="FinGuardAI.DataAccess/FinGuardAI.DataAccess.csproj" />
+</Solution>

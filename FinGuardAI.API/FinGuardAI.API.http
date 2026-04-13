@@ -1,0 +1,6 @@
+@FinGuardAI.API_HostAddress = http://localhost:5125
+
+GET {{FinGuardAI.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

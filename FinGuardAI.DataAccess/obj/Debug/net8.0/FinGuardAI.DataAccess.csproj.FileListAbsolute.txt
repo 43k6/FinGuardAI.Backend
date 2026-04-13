@@ -1,0 +1,14 @@
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\bin\Debug\net8.0\FinGuardAI.DataAccess.deps.json
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\bin\Debug\net8.0\FinGuardAI.DataAccess.dll
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\bin\Debug\net8.0\FinGuardAI.DataAccess.pdb
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\obj\Debug\net8.0\FinGuardAI.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\obj\Debug\net8.0\FinGuardAI.DataAccess.AssemblyInfoInputs.cache
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\obj\Debug\net8.0\FinGuardAI.DataAccess.AssemblyInfo.cs
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\obj\Debug\net8.0\FinGuardAI.DataAccess.csproj.CoreCompileInputs.cache
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\obj\Debug\net8.0\FinGuardAI.DataAccess.dll
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\obj\Debug\net8.0\refint\FinGuardAI.DataAccess.dll
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\obj\Debug\net8.0\FinGuardAI.DataAccess.pdb
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\obj\Debug\net8.0\ref\FinGuardAI.DataAccess.dll
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\obj\Debug\net8.0\FinGuardAI.DataAccess.csproj.AssemblyReference.cache
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\bin\Debug\net8.0\FinGuardAI.DataAccess.runtimeconfig.json
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.DataAccess\obj\Debug\net8.0\FinGuardAI.DataAccess.genruntimeconfig.cache

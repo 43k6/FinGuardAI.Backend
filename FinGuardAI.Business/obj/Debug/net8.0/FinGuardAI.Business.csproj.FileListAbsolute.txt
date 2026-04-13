@@ -1,0 +1,15 @@
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\bin\Debug\net8.0\FinGuardAI.Business.deps.json
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\bin\Debug\net8.0\FinGuardAI.Business.dll
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\bin\Debug\net8.0\FinGuardAI.Business.pdb
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\obj\Debug\net8.0\FinGuardAI.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\obj\Debug\net8.0\FinGuardAI.Business.AssemblyInfoInputs.cache
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\obj\Debug\net8.0\FinGuardAI.Business.AssemblyInfo.cs
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\obj\Debug\net8.0\FinGuardAI.Business.csproj.CoreCompileInputs.cache
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\obj\Debug\net8.0\FinGuardAI.Business.dll
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\obj\Debug\net8.0\refint\FinGuardAI.Business.dll
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\obj\Debug\net8.0\FinGuardAI.Business.pdb
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\obj\Debug\net8.0\ref\FinGuardAI.Business.dll
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\bin\Debug\net8.0\FinGuardAI.DataAccess.dll
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\bin\Debug\net8.0\FinGuardAI.DataAccess.pdb
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\obj\Debug\net8.0\FinGuardAI.Business.csproj.AssemblyReference.cache
+D:\Down\FinGuard AI\FinGuardAI\FinGuardAI.Business\obj\Debug\net8.0\FinGuard.D18F4D20.Up2Date
