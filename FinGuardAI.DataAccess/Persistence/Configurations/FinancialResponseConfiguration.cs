@@ -24,7 +24,7 @@ namespace FinGuardAI.DataAccess.Persistence.Configurations
             // العلاقات
             builder.HasOne(r => r.Request)
                    .WithOne(r => r.Response)
-                   .HasForeignKey<FinancialResponse>(r => r.RequestId)
+                   .HasForeignKey<FinancialRequest>(r => r.Id)
                    .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasOne(r => r.Creator)

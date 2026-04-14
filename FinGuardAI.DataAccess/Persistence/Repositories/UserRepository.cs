@@ -14,7 +14,7 @@ namespace WMS.Infrastructure.Persistence.Repositories
         private readonly AppDbContext _dbContext;
 
         public UserRepository(AppDbContext dbContext)
-        {_dbContext = dbContext;}
+        { _dbContext = dbContext; }
 
         public async Task<bool> Add(User entity)
         {
@@ -45,12 +45,11 @@ namespace WMS.Infrastructure.Persistence.Repositories
         {
             return await _dbContext.Users.AsNoTracking().ToListAsync();
         }
-
-        public async Task<User> GetByIdAsync(int id)
+        
+         public async Task<User> GetByIdAsync(int id)
         {
             return await _dbContext.Users.FindAsync(id);
         }
-
         public async Task<bool> Update(User entity)
         {
             if (entity == null)
@@ -62,25 +61,24 @@ namespace WMS.Infrastructure.Persistence.Repositories
                 return false;
 
             _dbContext.Entry(user).CurrentValues.SetValues(entity);
-            
+
             user.Person = entity.Person;
 
             return await Save();
         }
-        public async Task<User> GetByUsernameAsync(string username)
+         public async Task<User> GetByUsernameAsync(string username)
         {
             if (string.IsNullOrEmpty(username))
                 return null;
 
             return await _dbContext.Users
                     .Include(u => u.Person)
-                    .FirstOrDefaultAsync(x => x.UserName == username)  ;
+                    .FirstOrDefaultAsync(x => x.UserName == username);
         }
         public async Task<bool> Save()
         {
             return await _dbContext.SaveChangesAsync() > 0;
         }
-
         public async Task<bool> IsUsernameExistAsync(string username)
         {
             if (string.IsNullOrEmpty(username))
@@ -89,7 +87,6 @@ namespace WMS.Infrastructure.Persistence.Repositories
             return await _dbContext.Users
                             .AnyAsync(c => c.UserName == username);
         }
-
         public async Task<bool> IsPersonExistAsync(int PersonID)
         {
             if (PersonID <= 0)

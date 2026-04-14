@@ -15,7 +15,12 @@ namespace WMS.Infrastructure.Persistence.Repositories
         private readonly AppDbContext _dbContext;
 
         public PersonRepository(AppDbContext dbContext)
-        {_dbContext = dbContext;}
+        { _dbContext = dbContext; }
+
+        public async Task<IEnumerable<Person>> GetAllAsync()
+        {
+            return await _dbContext.People.AsNoTracking().ToListAsync();
+        }
 
         public async Task<bool> Add(Person entity)
         {
@@ -39,10 +44,7 @@ namespace WMS.Infrastructure.Persistence.Repositories
             return await Save();
         }
 
-        public async Task<IEnumerable<Person>> GetAllAsync()
-        {
-            return await _dbContext.People.AsNoTracking().ToListAsync();
-        }
+
 
         public async Task<Person> GetByIdAsync(int id)
         {
