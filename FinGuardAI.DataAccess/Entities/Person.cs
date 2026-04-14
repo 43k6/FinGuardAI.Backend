@@ -15,6 +15,8 @@ namespace FinGuardAI.DataAccess.Entities
         public string Email { get; set; }
         public string Phone { get; set; }
 
-        public virtual ICollection<User> Users { get; set; }
+        public virtual User? User { get; set; }
+      //  public virtual ICollection<User> Users { get; set; }
+
     }
 }

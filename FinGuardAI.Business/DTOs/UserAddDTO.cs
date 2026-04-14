@@ -1,0 +1,13 @@
+﻿namespace FinGuardAI.DataAccess.DTOs
+{
+    public class UserAddDTO
+    {
+        public int PersonID { get; set; }
+        public string Username { get; set; } = string.Empty;
+        public string Role { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty; // تُستخدم لاستقبال كلمة المرور فقط
+        public bool IsActive { get; set; }
+    }
+
+   
+}
